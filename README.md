@@ -1,4 +1,4 @@
-# learning_go
+# Learning GO
 ## What is this?
 This is a set of things I have written while learning GO
 ## How to play:
