@@ -47,6 +47,4 @@ func main() {
   } else {
     fmt.Println("You win! It took you", number_of_guesses, "guesses")
   }
-  //fmt.Println(computer_number)
-  //fmt.Println(user_name)
 }
