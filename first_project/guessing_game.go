@@ -14,13 +14,16 @@ func main() {
   rand.Seed(time.Now().UnixNano())
   computer_number := rand.Intn(100)
   number_of_guesses := 0
+  
   fmt.Println("Enter your name to begin: ")
   input := bufio.NewScanner(os.Stdin)
   input.Scan()
   user_name := input.Text()
+  
   if user_name == "test" {
     fmt.Println(computer_number)
   }
+  
   var guess int
   for guess != computer_number {
     if number_of_guesses == 0 {
@@ -38,6 +41,7 @@ func main() {
       fmt.Println("Guess Lower")
     }
   }
+  
   if number_of_guesses == 1 {
     fmt.Println("You win! It took you 1 guess")
   } else {
